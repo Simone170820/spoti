@@ -4,104 +4,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musica di Susi</title>
-    <link rel="stylesheet" href="nabi.css">
+    <link rel="stylesheet" href="simba la rue.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 flex items-center justify-center min-h-screen">
-    <div class="flex flex-col items-center space-y-6"> <!-- Colonna di player -->
+<body class="bg-gray-900 flex flex-col min-h-screen">
 
-        <div class="image-container">
-            <img src="Untitled-design-156.webp" alt="Foto Musica" class="image">
-            <div class="text-overlay">
-                <h1 class="text-white text-xl">Simba La Rue</h1>
-            </div>
-        </div>
-
-        <div class="sidebar" id="sidebar">
-            <div class="logo">
+    <!-- Sidebar -->
+    <div class="flex">
+        <div class="sidebar bg-gray-800 w-64 p-6 flex flex-col space-y-4">
+            <div class="logo text-white text-2xl font-semibold">
                 <h1>MusicFlow</h1>
             </div>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="simba_la_rue.html">Simba la rue</a></li>
-                    <li><a href="nabi.html">Nabi</a></li>
-                    <li><a href="capo_plazza.html">Capo plaza</a></li>
+                <ul class="space-y-4">
+                    <li><a href="index.html" class="text-white hover:text-azul transition-colors">Home</a></li>
+                    <li><a href="simba_la_rue.html" class="text-white hover:text-azul transition-colors">Simba la Rue</a></li>
+                    <li><a href="nabi.html" class="text-white hover:text-azul transition-colors">Nabi</a></li>
+                    <li><a href="capo_plazza.html" class="text-white hover:text-azul transition-colors">Capo Plaza</a></li>
                 </ul>
             </nav>
         </div>
-        
-        <nav class="navbar">
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i> <!-- Icona hamburger -->
-            </div>
-            <ul class="nav-list" id="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="simba_la_rue.html">Simba la rue</a></li>
-                <li><a href="nabi.html">Nabi</a></li>
-                <li><a href="capo_plazza.html">Capo plaza</a></li>
-            </ul>
-        </nav>
-   
-        <div class="heart-container">
-            <img src="cuore.png" alt="Heart" class="heart" width="60" height="50">
-        </div>
 
-        <div class="flex flex-col items-center space-y-4">
-            <!-- AUDIO PLAYER 1 -->
-            <div class="audio-player">
-                <p style="color:#ffffff">MI PIACCIONO LE ARMI</p>
-                <img src="maxresdefault (2).jpg" alt="Placeholder image" class="rounded-full" width="150" height="150">
-                <div class="player-controls bg-gray-200 rounded-full p-2 flex items-center space-x-4 w-80">
-                    <audio class="audio-file" src="Simba La Rue - MI PIACCIONO LE ARMI (Official Lyric Video).mp3"></audio>
-                    <button class="play-pause text-black"><i class="fas fa-play"></i></button>
-                    <span class="current-time text-black text-sm">0:00</span>
-                    <span class="text-black text-sm">/</span>
-                    <span class="duration text-black text-sm">2:50</span>
-                    <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
-                    <button class="volume text-black"><i class="fas fa-volume-up"></i></button>
-                    <button class="options text-black"><i class="fas fa-ellipsis-v"></i></button>
+        <!-- Main Content -->
+        <div class="flex-1 p-6">
+            <!-- Navbar -->
+            <nav class="navbar bg-gray-800 p-4 flex justify-between items-center">
+                <div class="menu-toggle text-white text-2xl cursor-pointer lg:hidden">
+                    <i class="fas fa-bars"></i> <!-- Icona hamburger -->
+                </div>
+                <ul class="nav-list flex space-x-6 text-white hidden lg:flex">
+                    <li><a href="index.html" class="hover:text-azul transition-colors">Home</a></li>
+                    <li><a href="simba_la_rue.html" class="hover:text-azul transition-colors">Simba la Rue</a></li>
+                    <li><a href="nabi.html" class="hover:text-azul transition-colors">Nabi</a></li>
+                    <li><a href="capo_plazza.html" class="hover:text-azul transition-colors">Capo Plaza</a></li>
+                </ul>
+            </nav>
+
+            <div class="image-container text-center">
+                <img src="Untitled-design-156.webp" alt="Foto Musica" class="image rounded-lg mb-4">
+                <h1 class="text-white text-xl">Simba La Rue</h1>
+            </div>
+
+            <!-- Audio Players -->
+            <div class="flex flex-col items-center space-y-6">
+                <!-- PRIMO AUDIO PLAYER -->
+                <div class="audio-player bg-gray-800 p-4 rounded-lg">
+                    <p class="text-white">MI PIACCIONO LE ARMI</p>
+                    <img src="maxresdefault (2).jpg" alt="Placeholder image" class="rounded-full mb-4" width="150" height="150">
+                    <div class="player-controls bg-gray-700 rounded-full p-2 flex items-center space-x-4 w-80">
+                        <audio class="audio-file" src="Simba La Rue - MI PIACCIONO LE ARMI (Official Lyric Video).mp3"></audio>
+                        <button class="play-pause text-white"><i class="fas fa-play"></i></button>
+                        <span class="current-time text-white text-sm">0:00</span>
+                        <span class="text-white text-sm">/</span>
+                        <span class="duration text-white text-sm">2:50</span>
+                        <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
+                        <button class="volume text-white"><i class="fas fa-volume-up"></i></button>
+                        <button class="options text-white"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
+                </div>
+
+                <!-- SECONDO AUDIO PLAYER -->
+                <div class="audio-player bg-gray-800 p-4 rounded-lg">
+                    <p class="text-white">NO MIX NO MASTER</p>
+                    <img src="sddefault.jpg" alt="Placeholder image" class="rounded-full mb-4" width="150" height="150">
+                    <div class="player-controls bg-gray-700 rounded-full p-2 flex items-center space-x-4 w-80">
+                        <audio class="audio-file" src="Simba La Rue - NO MIX NO MASTER (Official Lyric Video).mp3"></audio>
+                        <button class="play-pause text-white"><i class="fas fa-play"></i></button>
+                        <span class="current-time text-white text-sm">0:00</span>
+                        <span class="text-white text-sm">/</span>
+                        <span class="duration text-white text-sm">0:00</span>
+                        <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
+                        <button class="volume text-white"><i class="fas fa-volume-up"></i></button>
+                        <button class="options text-white"><i class="fas fa-ellipsis-v"></i></button>
+                    </div>
                 </div>
             </div>
-
-            <!-- AUDIO PLAYER 2 -->
-            <div class="audio-player">
-                <p style="color:#ffffff">NO MIX NO MASTER</p>
-                <img src="sddefault.jpg" alt="Placeholder image" class="rounded-full" width="150" height="150">
-                <div class="player-controls bg-gray-200 rounded-full p-2 flex items-center space-x-4 w-80">
-                    <audio class="audio-file" src="Simba La Rue - NO MIX NO MASTER (Official Lyric Video).mp3"></audio>
-                    <button class="play-pause text-black"><i class="fas fa-play"></i></button>
-                    <span class="current-time text-black text-sm">0:00</span>
-                    <span class="text-black text-sm">/</span>
-                    <span class="duration text-black text-sm">0:00</span>
-                    <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
-                    <button class="volume text-black"><i class="fas fa-volume-up"></i></button>
-                    <button class="options text-black"><i class="fas fa-ellipsis-v"></i></button>
-                </div>
-            </div>
-
-            <!-- AUDIO PLAYER 3 -->
-            <div class="audio-player">
-                <p style="color:#ffffff">Braquages</p>
-                <img src="maxresdefault.jpg" alt="Placeholder image" class="rounded-full" width="150" height="150">
-                <div class="player-controls bg-gray-200 rounded-full p-2 flex items-center space-x-4 w-80">
-                    <audio class="audio-file" src="Nabi - Braquages (Official Video) (1).mp3"></audio>
-                    <button class="play-pause text-black"><i class="fas fa-play"></i></button>
-                    <span class="current-time text-black text-sm">0:00</span>
-                    <span class="text-black text-sm">/</span>
-                    <span class="duration text-black text-sm">0:00</span>
-                    <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
-                    <button class="volume text-black"><i class="fas fa-volume-up"></i></button>
-                    <button class="options text-black"><i class="fas fa-ellipsis-v"></i></button>
-                </div>
-            </div>
-
-            <!-- Add more audio players as needed -->
         </div>
     </div>
 
-    <script src="nabi.js"></script>
+    <script src="simba la rue.js"></script>
 </body>
 </html>
