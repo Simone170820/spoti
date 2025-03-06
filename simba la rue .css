@@ -62,6 +62,7 @@ body {
 .volume:hover i,
 .options:hover i {
     transform: scale(1.2);
+    color: #00aaff; /* Azzurro al passaggio del mouse */
 }
 
 .seek-bar {
@@ -161,94 +162,25 @@ h2, p {
         justify-content: flex-end;
     }
 
-    .nav-list {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 200px;
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
     .menu-toggle {
         display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        padding: 20px;
     }
 
     .nav-list.active {
-        display: flex; /* Mostra il menu quando è attivo */
-    }
-
-    /* Sidebar */
-    .sidebar {
-        width: 250px;
-        background-color: #000;
-        position: fixed;
-        height: 100%;
-        padding: 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        transition: transform 0.3s ease;
-        transform: translateX(-250px);
     }
 
     .sidebar.active {
         transform: translateX(0);
-    }
-
-    .sidebar .logo h1 {
-        margin: 0;
-        font-size: 2.5rem;
-        color: #00aaff; /* Azzurro */
-        margin-bottom: 40px;
-    }
-
-    nav ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 0;
-    }
-
-    nav ul li {
-        margin-bottom: 30px;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.4rem;
-        transition: color 0.3s, transform 0.3s;
-        display: block;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    nav ul li a:hover {
-        color: #00aaff; /* Azzurro */
-        transform: translateX(10px);
-    }
-
-    /* Bottone per aprire/chiudere la sidebar */
-    .sidebar-toggle {
-        font-size: 30px;
-        background: none;
-        border: none;
-        color: #00aaff;
-        cursor: pointer;
-        transition: color 0.3s;
-    }
-
-    .sidebar-toggle:hover {
-        color: #fff;
-    }
-
-    .sidebar-toggle {
-        display: block;
     }
 }
