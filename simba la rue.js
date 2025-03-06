@@ -61,6 +61,22 @@ function toggleMenu() {
 // Aggiungi evento click per il menu
 menuToggle.addEventListener('click', toggleMenu);
 
+// Gestire swipe per dispositivi mobili
+let startX;
+
+sidebar.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+sidebar.addEventListener('touchmove', (e) => {
+    let moveX = e.touches[0].clientX;
+    if (moveX - startX > 50) {
+        sidebar.classList.add('active');
+    } else if (startX - moveX > 50) {
+        sidebar.classList.remove('active');
+    }
+});
+
 // Funzione per chiudere il menu quando si fa uno swipe
 let touchStartX = 0;
 let touchEndX = 0;
@@ -68,7 +84,6 @@ let touchEndX = 0;
 function handleSwipe() {
     if (touchStartX > touchEndX) {
         sidebar.classList.remove('active');
-        navList.classList.remove('active');
     }
 }
 
