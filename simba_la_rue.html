@@ -9,7 +9,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-900 flex flex-col min-h-screen">
+<body class="bg-gray-900 text-white font-sans flex flex-col min-h-screen">
+
     <div class="navbar">
         <button class="menu-toggle">☰</button> <!-- Tasto per aprire il menu -->
         
@@ -29,43 +30,57 @@
             </ul>
         </nav>
     </div>
+    
+    <!-- Area dove fare swipe -->
+   
+    
 
-    <div class="image-container text-center">
-        <img src="Untitled-design-156.webp" alt="Foto Musica" class="image rounded-lg mb-4">
-        <h1 class="text-white text-xl">Simba La Rue</h1>
-    </div>
+        <!-- Contenuto della pagina -->
+        <div class="content-container px-6 py-16">
+            <h2 class="text-4xl font-bold mb-8">Simba La Rue</h2>
 
-    <!-- Audio Players -->
-    <div class="flex flex-col items-center space-y-6">
-        <!-- PRIMO AUDIO PLAYER -->
-        <div class="audio-player bg-gray-800 p-4 rounded-lg">
-            <p class="text-white">MI PIACCIONO LE ARMI</p>
-            <img src="maxresdefault (2).jpg" alt="Placeholder image" class="rounded-full mb-4" width="150" height="150">
-            <div class="player-controls bg-gray-700 rounded-full p-2 flex items-center space-x-4 w-80">
-                <audio class="audio-file" src="Simba La Rue - MI PIACCIONO LE ARMI (Official Lyric Video).mp3"></audio>
-                <button class="play-pause text-white"><i class="fas fa-play"></i></button>
-                <span class="current-time text-white text-sm">0:00</span>
-                <span class="text-white text-sm">/</span>
-                <span class="duration text-white text-sm">2:50</span>
-                <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
-                <button class="volume text-white"><i class="fas fa-volume-up"></i></button>
-                <button class="options text-white"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="image-container text-center mb-12">
+                <img src="Untitled-design-156.webp" alt="Simba La Rue" class="rounded-lg shadow-lg">
             </div>
-        </div>
 
-        <!-- SECONDO AUDIO PLAYER -->
-        <div class="audio-player bg-gray-800 p-4 rounded-lg">
-            <p class="text-white">NO MIX NO MASTER</p>
-            <img src="sddefault.jpg" alt="Placeholder image" class="rounded-full mb-4" width="150" height="150">
-            <div class="player-controls bg-gray-700 rounded-full p-2 flex items-center space-x-4 w-80">
-                <audio class="audio-file" src="Simba La Rue - NO MIX NO MASTER (Official Lyric Video).mp3"></audio>
-                <button class="play-pause text-white"><i class="fas fa-play"></i></button>
-                <span class="current-time text-white text-sm">0:00</span>
-                <span class="text-white text-sm">/</span>
-                <span class="duration text-white text-sm">0:00</span>
-                <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
-                <button class="volume text-white"><i class="fas fa-volume-up"></i></button>
-                <button class="options text-white"><i class="fas fa-ellipsis-v"></i></button>
+            <div class="audio-container flex flex-col items-center space-y-8">
+                <!-- Primo Audio Player -->
+                <div class="audio-player bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-lg">
+                    <p class="text-xl mb-4">MI PIACCIONO LE ARMI</p>
+                    <img src="maxresdefault (2).jpg" alt="Music Cover" class="rounded-full mb-4 w-40 h-40 object-cover">
+                    <div class="player-controls bg-gray-700 rounded-full p-3 flex items-center space-x-4">
+                        <audio class="audio-file" src="Simba La Rue - MI PIACCIONO LE ARMI (Official Lyric Video).mp3"></audio>
+                        <button class="play-pause text-white">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span class="current-time text-white text-sm">0:00</span>
+                        <span class="text-white text-sm">/</span>
+                        <span class="duration text-white text-sm">2:50</span>
+                        <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
+                        <button class="volume text-white">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Secondo Audio Player -->
+                <div class="audio-player bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-lg">
+                    <p class="text-xl mb-4">NO MIX NO MASTER</p>
+                    <img src="sddefault.jpg" alt="Music Cover" class="rounded-full mb-4 w-40 h-40 object-cover">
+                    <div class="player-controls bg-gray-700 rounded-full p-3 flex items-center space-x-4">
+                        <audio class="audio-file" src="Simba La Rue - NO MIX NO MASTER (Official Lyric Video).mp3"></audio>
+                        <button class="play-pause text-white">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <span class="current-time text-white text-sm">0:00</span>
+                        <span class="text-white text-sm">/</span>
+                        <span class="duration text-white text-sm">0:00</span>
+                        <input class="seek-bar w-full h-1 bg-gray-400 rounded-full appearance-none" type="range">
+                        <button class="volume text-white">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
