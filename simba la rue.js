@@ -46,6 +46,7 @@ audioPlayers.forEach(player => {
         audio.currentTime = seekBar.value;
     });
 });
+
 // Aggiungi un listener per il click sul bottone del menu
 const menuToggle = document.querySelector('.menu-toggle');
 const navList = document.querySelector('.nav-list');
