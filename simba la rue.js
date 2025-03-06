@@ -46,3 +46,36 @@ audioPlayers.forEach(player => {
         audio.currentTime = seekBar.value;
     });
 });
+// Aggiungi un listener per il click sul bottone del menu
+const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.querySelector('.nav-list');
+const sidebar = document.querySelector('.sidebar');
+
+// Funzione per attivare/disattivare il menu
+function toggleMenu() {
+    navList.classList.toggle('active');
+    sidebar.classList.toggle('active');
+}
+
+// Aggiungi evento click per il menu
+menuToggle.addEventListener('click', toggleMenu);
+
+// Funzione per chiudere il menu quando si fa uno swipe
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleSwipe() {
+    if (touchStartX > touchEndX) {
+        sidebar.classList.remove('active');
+        navList.classList.remove('active');
+    }
+}
+
+document.querySelector('.image-container').addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+document.querySelector('.image-container').addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
