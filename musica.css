@@ -39,7 +39,7 @@ body {
 
 .sidebar h1 {
     font-size: 2rem;
-    color: #00aaff;
+    color: #cc00ff;
     margin-bottom: 40px;
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    color: #00aaff;
+    color: #cc00ff;
 }
 
 /* Navbar */
@@ -93,7 +93,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #00aaff;
+    color: #cc00ff;
 }
 
 /* Audio Player */
@@ -143,7 +143,7 @@ body {
     appearance: none;
     width: 12px;
     height: 12px;
-    background-color: #00aaff;
+    background-color: #cc00ff;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -170,3 +170,4 @@ body {
         display: block;
     }
 }
+

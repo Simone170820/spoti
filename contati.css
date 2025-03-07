@@ -1,7 +1,7 @@
 /* Body e design generale */
 body {
     background-color: #000;
-    color: #00aaff;
+    color:#cc00ff;
     font-family: Arial, sans-serif;
     text-align: center;
     margin-left: 240px; /* Aggiungi spazio a sinistra per la sidebar */
@@ -26,19 +26,19 @@ input, textarea, button {
 /* Stili per input e textarea */
 input, textarea {
     background-color: #222;
-    color: #00aaff;
+    color: #cc00ff;
 }
 
 /* Stili per il bottone */
 button {
-    background-color: #00aaff;
+    background-color: #cc00ff;
     color: #000;
     font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0088cc;
+    background-color: #cc00ff;
 }
 
 /* Recensioni */
@@ -90,7 +90,7 @@ button:hover {
 
 .sidebar h1 {
     font-size: 2rem;
-    color: #00aaff;
+    color: #cc00ff;
     margin-bottom: 40px;
 }
 
@@ -113,7 +113,7 @@ button:hover {
 }
 
 .sidebar ul li a:hover {
-    color: #00aaff;
+    color: #cc00ff;
 }
 
 /* Navbar */
@@ -144,7 +144,7 @@ button:hover {
 }
 
 .navbar ul li a:hover {
-    color: #00aaff;
+    color: #cc00ff;
 }
 
 /* Bottone del menu (spostato a sinistra) */
