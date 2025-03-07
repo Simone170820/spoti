@@ -384,3 +384,22 @@ body {
         display: block;
     }
 }
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #00AEEF;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
