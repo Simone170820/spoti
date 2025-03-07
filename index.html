@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sito di Musica</title>
     <link rel="stylesheet" href="styles.css">
+    
     <!-- Icone per il sito -->
     <link rel="icon" type="image/png" href="LOGO-.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="LOGO-.png">
-    <link rel="shortcut icon" href="LOGO-.png">
-
-    <!-- Icona per iPhone -->
     <link rel="apple-touch-icon" sizes="180x180" href="LOGO-.png">
     <meta name="apple-mobile-web-app-title" content="Musica">
-
+    
     <!-- Web Manifest -->
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+
     <div class="sidebar" id="sidebar">
         <div class="logo">
             <h1>MusicFlow</h1>
@@ -25,10 +23,10 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="simba_la_rue.html">Simba la rue </a></li>
+                <li><a href="simba_la_rue.html">Simba la Rue</a></li>
                 <li><a href="nabi.html">Nabi</a></li>
-                <li><a href="capo_plazza.html">Capo plaza</a></li>
-                <li><a href="contanti.html">Contati </a></li>
+                <li><a href="capo_plazza.html">Capo Plaza</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
             </ul>
         </nav>
     </div>
@@ -39,31 +37,45 @@
             <h1>Le Nuove Uscite</h1>
         </header>
 
-      <div class="album-carousel">
+        <section class="album-carousel">
             <div class="album">
                 <a href="nabi.html" target="_blank" class="album-link">
-                    <img src="nabi-kichta.avif" alt="Album 1">
+                    <img src="nabi-kichta.avif" alt="Nabi">
                     <h3>Nabi</h3>
                 </a>
             </div>
             <div class="album">
                 <a href="simba_la_rue.html" target="_blank" class="album-link">
-                    <img src="Untitled-design-156.webp" alt="Album 2">
+                    <img src="Untitled-design-156.webp" alt="Simba la Rue">
                     <h3>Simba la Rue</h3>
                 </a>
             </div>
             <div class="album">
                 <a href="capo_plazza.html" target="_blank" class="album-link">
-                    <img src="Capo-Plaza.jpg" alt="Album 3">
+                    <img src="Capo-Plaza.jpg" alt="Capo Plaza">
                     <h3>Capo Plaza</h3>
                 </a>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
 
         <footer>
             <p>&copy; 2025 Simone Pontillo - NovaSys</p>
+            <a href="https://www.iubenda.com/privacy-policy/15305253" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe" title="Privacy Policy">Privacy Policy</a> | 
+            <a href="https://www.iubenda.com/privacy-policy/15305253/cookie-policy" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe" title="Cookie Policy">Cookie Policy</a> | 
+            <a href="https://www.iubenda.com/termini-e-condizioni/15305253" class="iubenda-black iubenda-noiframe iubenda-embed iubenda-noiframe" title="Termini e Condizioni">Termini e Condizioni</a>
+            
+            <script type="text/javascript">
+                (function (w,d) {
+                    var loader = function () {
+                        var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
+                        s.src="https://cdn.iubenda.com/iubenda.js";
+                        tag.parentNode.insertBefore(s,tag);
+                    };
+                    if(w.addEventListener){w.addEventListener("load", loader, false);}
+                    else if(w.attachEvent){w.attachEvent("onload", loader);}
+                    else{w.onload = loader;}
+                })(window, document);
+            </script>
         </footer>
     </div>
 
@@ -75,5 +87,6 @@
             sidebar.classList.toggle('active');
         });
     </script>
+
 </body>
 </html>
