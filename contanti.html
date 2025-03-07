@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti</title>
+    <link rel="stylesheet" href="contati.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <button class="menu-toggle">☰</button> <!-- Tasto per aprire il menu -->
+        
+    </div>
+    
+    <!-- Sidebar che si apre -->
+    <div class="sidebar">
+        <div class="logo">
+            <h1>MusicFlow</h1>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="simba_la_rue.html">Simba la rue</a></li>
+                <li><a href="nabi.html">Nabi</a></li>
+                <li><a href="capo_plazza.html">Capo plaza</a></li>
+                <li><a href="contanti.html">Contati </a></li>
+                <!-- Altri link -->
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <h1>Contattaci</h1>
+        <form action="https://formspree.io/f/mqapzlpp" method="POST">
+            <label for="contact-name">Nome:</label>
+            <input type="text" id="contact-name" name="name" required><br><br>
+          
+            <label for="email">Email:</label>
+            <textarea id="email" name="review" rows="4" required></textarea><br><br>
+          
+            <button type="submit">Invia</button>
+        </form>
+    </div>
+
+    <div class="container reviews">
+        <h2>Recensioni</h2>
+        <form action="https://formspree.io/f/mldjrljb" method="POST">
+            <label for="reviewer-name">Nome:</label>
+            <input type="text" id="reviewer-name" name="name" required><br><br>
+          
+            <label for="review-text">Recensione:</label>
+            <textarea id="review-text" name="review" rows="4" required></textarea><br><br>
+          
+            <label for="rating">Punteggio:</label>
+            <div class="stars">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <input type="hidden" name="rating" id="rating" value="0">
+            <br><br>
+          
+            <button type="submit">Invia Recensione</button>
+        </form>
+    </div>
+
+    <script src="contati.js"></script>
+</body>
+</html>
