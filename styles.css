@@ -54,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00aaff; /* Azzurro */
+    color: #cc00ff; /* Azzurro */
     transform: translateX(10px);
 }
 
@@ -70,7 +70,7 @@ nav ul li a:hover {
     font-size: 30px;
     background: none;
     border: none;
-    color: #00aaff;
+    color: #cc00ff;
     cursor: pointer;
     transition: color 0.3s;
 }
